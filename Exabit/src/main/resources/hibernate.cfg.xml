@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url"></property>
+    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+      <mapping class="main.com.exabit.java.Entities.FriendRequestEntity"/>
+      <mapping class="main.com.exabit.java.Entities.FriendsEntity"/>
+      <mapping class="main.com.exabit.java.Entities.MessageEntity"/>
+      <mapping class="main.com.exabit.java.Entities.MessagePropertiesEntity"/>
+      <mapping class="main.com.exabit.java.Entities.PrivateKeyEntity"/>
+      <mapping class="main.com.exabit.java.Entities.PublicKeyEntity"/>
+      <mapping class="main.com.exabit.java.Entities.UsersEntity"/>
+      <mapping class="main.java.com.exabit.Entities.FriendRequestEntity"/>
+      <mapping class="main.java.com.exabit.Entities.FriendsEntity"/>
+      <mapping class="main.java.com.exabit.Entities.MessageEntity"/>
+      <mapping class="main.java.com.exabit.Entities.MessagePropertiesEntity"/>
+      <mapping class="main.java.com.exabit.Entities.PrivateKeyEntity"/>
+      <mapping class="main.java.com.exabit.Entities.PublicKeyEntity"/>
+      <mapping class="main.java.com.exabit.Entities.UsersEntity"/>
+      <mapping class="com.exabit.Entities.AuthoritiesEntity"/>
+      <!-- DB schema will be updated if needed -->
+    <!-- <property name="hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>
